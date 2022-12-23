@@ -18,6 +18,23 @@
 *::before,
 *::after {
     box-sizing: border-box;}
+ 
+h1, 
+h2, 
+h3, 
+ul,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul {
+padding-left: 0;
+}
+img {
+    display: block;
+}
+
 
 body {
 font-family: "Roboto", sans-serif;
@@ -30,10 +47,31 @@ background-color: var(--site-background-color);
 }
 
 /* ------HEADER-----------*/
-.heder{
-background-color: var(--header-background-color);
+.container {
+    width: 1157px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid #4D5AE5 ;
+    margin: 0 auto;
 }
 
+.header{
+background-color: var(--header-background-color);
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 160px;
+padding-right: 160px;
+}
+
+
+.heder-navigation {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+.header-container {
+display: flex;
+}
 
 .heder-logo {
 font-family: "Raleway";
@@ -43,6 +81,8 @@ font-family: "Raleway";
     letter-spacing: 0.03em;
     color: var(--text-color);
     text-transform: uppercase;
+    display: flex;
+   
 
 }
 .logo {
@@ -53,7 +93,17 @@ font-family: "Raleway";
         letter-spacing: 0.03em;
         color: var(--accent-brand);
         text-transform: uppercase;  
+        display: flex;
+        margin-right: 76px;
 }
+
+
+.heder-list {
+    display: flex;
+    gap: 40px;
+    
+}
+
 .list {
     list-style: none;
 }
@@ -64,6 +114,7 @@ font-family: "Raleway";
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin: 0;
 }
 .link {
     text-decoration: none;
@@ -73,12 +124,20 @@ font-family: "Raleway";
 .link:focus {
 color: var(--accent-brand);
 }
+
+.contacts {
+display: flex;
+margin: 0;
+align-items: center;
+}
+
 .heder-contacts-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+   margin: 0;
 }
 
 /*-------HERO----------*/
@@ -138,6 +197,7 @@ color: var(--accent-brand);
     line-height: 1.33px;
     letter-spacing: 0.04em;
     color: var(--footer-logo);
+    display: flex;
 }
 .footer-text{
 color: #E7E9FC;
