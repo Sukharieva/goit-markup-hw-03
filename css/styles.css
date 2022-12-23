@@ -71,8 +71,12 @@ padding-right: 160px;
 }
 .header-container {
 display: flex;
+} 
+.logo-link {
+    display: flex;
+        margin-right: auto;
+        align-items: center;
 }
-
 .heder-logo {
 font-family: "Raleway";
     font-weight: 700;
@@ -191,16 +195,26 @@ align-items: center;
 }
 .footer-logo {
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 18px;
-    line-height: 1.33px;
-    letter-spacing: 0.04em;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
     color: var(--footer-logo);
+    text-transform: uppercase;
     display: flex;
 }
+
 .footer-text{
 color: #E7E9FC;
+width: 264px;
+margin-top: 16px;
+}
+
+.footer-logo-text {
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 103px;
+
 }
 
 /*---------Portfolio---------*/
