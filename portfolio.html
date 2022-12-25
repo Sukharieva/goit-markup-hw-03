@@ -14,162 +14,190 @@
     <title>Portfolio</title>
   </head>
   <body class="site-body">
-    <header class="header">
-      <nav class="heder-navigation">
-        <a class="logo link" href="./index.html"> web <span class="heder-logo">studio</span> </a>
+    <div class="main">
+      <header class="header">
+        <div class="container header-container">
+          <nav class="heder-navigation">
+            <div class="logo-link">
+              <a class="logo link" href="./index.html">
+                web <span class="heder-logo">studio</span>
+              </a>
+            </div>
+            <ul class="heder-list list">
+              <li class="heder-item">
+                <a class="hader-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="heder-item">
+                <a class="hader-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="heder-item">
+                <a class="hader-link link" href="./index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts list">
+            <li>
+              <a class="heder-contacts-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
 
-        <ul class="heder-list list">
-          <li class="heder-item">
-            <a class="hader-link link" href="./index.html">Studio</a>
-          </li>
-          <li class="heder-item">
-            <a class="hader-link link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="heder-item">
-            <a class="hader-link link" href="./index.html">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="heder-contacts list">
-        <li class="heder-contacts link">
-          <a class="heder-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-        <li>
-          <a class="heder-contacts-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main>
-      <section>
-        <h1 hidden>Portfolio</h1>
-        
-        <!--filter buttons -->
-        <h2 hidden>Navigation Portfolio</h2>
-        <button class="filter-btn btn" type="button">All</button>
-        <button class="filter-btn btn" type="button">Web Site</button>
-        <button class="filter-btn btn" type="button">App</button>
-        <button class="filter-btn btn" type="button">Design</button>
-        <button class="filter-btn btn" type="button">Marketing</button>
-        <!--portfolio -->
-        <ul class="list">
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev1.jpg"
-                alt="Screenshots from the phone banking application"
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Banking App Interface Concept</h3>
-            <p>App</p>
-          </li>
+            <li class="heder-contacts link">
+              <a class="heder-contacts-link link tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="container">
+            <h1 hidden>Portfolio</h1>
 
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev2.jpg"
-                alt="the phone scans the qr-code"
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Cashless Payment</h3>
-            <p>Marketing</p>
-          </li>
+            <!--filter buttons -->
+            <h2 hidden>Navigation Portfolio</h2>
+            <div class="filter"> 
+            <button class="filter-btn btn" type="button">All</button>
+            <button class="filter-btn btn" type="button">Web Site</button>
+            <button class="filter-btn btn" type="button">App</button>
+            <button class="filter-btn btn" type="button">Design</button>
+            <button class="filter-btn btn" type="button">Marketing</button>
+            </div>
+            <!--portfolio -->
+            <div class="portfolio-icon">
+            <ul class="portfolio-list list">
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev1.jpg"
+                    alt="Screenshots from the phone banking application"
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Banking App Interface Concept</h3>
+                <p>App</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img src="./images/dev3.jpg" alt="Laptop and phone" width="360" height="300" />
-            </a>
-            <h3 class="title-h3">Meditaion App</h3>
-            <p>App</p>
-          </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev2.jpg"
+                    alt="the phone scans the qr-code"
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Cashless Payment</h3>
+                <p>Marketing</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev4.jpg"
-                alt="the phone in the holder and the driver"
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Taxi Service</h3>
-            <p>Marketing</p>
-          </li>
+              <li>
+                <a href="#">
+                  <img src="./images/dev3.jpg" alt="Laptop and phone" width="360" height="300" />
+                </a>
+                <h3 class="title-h3">Meditaion App</h3>
+                <p>App</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev5.jpg"
-                alt="Five screenshots from the phone"
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Screen Illustrations</h3>
-            <p>Design</p>
-          </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev4.jpg"
+                    alt="the phone in the holder and the driver"
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Taxi Service</h3>
+                <p>Marketing</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img src="./images/dev6.jpg" alt="girl with headphones " width="360" height="300" />
-            </a>
-            <h3 class="title-h3">Online Courses</h3>
-            <p>Marketing</p>
-          </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev5.jpg"
+                    alt="Five screenshots from the phone"
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Screen Illustrations</h3>
+                <p>Design</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev7.jpg"
-                alt="Instagram page on your phone screen "
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Instagram Stories Concept</h3>
-            <p>Design</p>
-          </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev6.jpg"
+                    alt="girl with headphones "
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Online Courses</h3>
+                <p>Marketing</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev8.jpg"
-                alt="a girl holding an eco-bag of vegetables"
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Organic Food</h3>
-            <p>Web Site</p>
-          </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev7.jpg"
+                    alt="Instagram page on your phone screen "
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Instagram Stories Concept</h3>
+                <p>Design</p>
+              </li>
 
-          <li>
-            <a href="#">
-              <img
-                src="./images/dev9.jpg"
-                alt="The barista pours the cappuccino"
-                width="360"
-                height="300"
-              />
-            </a>
-            <h3 class="title-h3">Fresh Coffee</h3>
-            <p>Web Site</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!--footer-->
-    <footer class="footer">
-      <a class="logo link" href="./index.html"> WEB <span class="footer-logo">STUDIO</span> </a>
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital marketing & growth
-        solutions.
-      </p>
-    </footer>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev8.jpg"
+                    alt="a girl holding an eco-bag of vegetables"
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Organic Food</h3>
+                <p>Web Site</p>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/dev9.jpg"
+                    alt="The barista pours the cappuccino"
+                    width="360"
+                    height="300"
+                  />
+                </a>
+                <h3 class="title-h3">Fresh Coffee</h3>
+                <p>Web Site</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!--footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-logo-text">
+            <div class="logo-link">
+              <a class="logo link" href="./index.html">
+                Web <span class="footer-logo">Studio</span>
+              </a>
+            </div>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with digital marketing &
+              growth solutions.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
