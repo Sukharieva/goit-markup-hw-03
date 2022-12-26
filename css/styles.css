@@ -24,8 +24,7 @@ h2,
 h3, 
 ul,
 p {
-   margin-top: 0;
-   margin-bottom: 0;
+  margin: 0 ;
 }
 
 ul {
@@ -42,33 +41,28 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    background-color: #d4d4d4;
     color: var(--secondary-text-color);
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto
-   
-
 }
 .main {
-margin: 0 auto;
-background-color: var(--site-background-color);
-
+    background-color: var(--site-background-color);   
 }
 
 /* ------HEADER-----------*/
 .container {
     width: 1158px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    
-    margin: 0 auto;
 }
 
 .header{
 background-color: var(--header-background-color);
 border-bottom: 1px solid #E7E9FC;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+padding-top: 24px;
+padding-bottom: 24px;
+display: block;
+
 }
 
 .heder-navigation {
@@ -79,10 +73,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 .header-container {
    display: flex;
-   padding-top: 24px;
-    padding-bottom: 24px;
-    
-    
+   
 } 
 .logo-link {
     display: flex;
@@ -123,8 +114,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin: 0;
-
 }
 
 .list {
@@ -137,10 +126,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin: 0;
 }
+
 .link {
     text-decoration: none;
+    
 }
 
 .link:hover, 
@@ -150,7 +140,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 .contacts {
     display: flex ;
-    margin: 0;
     align-items: center;
 }
 
@@ -160,30 +149,31 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    margin: 0;
 }
 .tel {
   margin-left: 40px;
 }
 
-
 /*-------HERO----------*/
-
 
 .hero {
     background-color: var(--hero-bckround-color);
     color: var(--hero-bckround-color);
-    padding: 188px 473px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
+
 .hero-title {
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 1.07;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 48px ;
-    padding: 0;
+font-weight: 600;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--filter-btn-text-color);
+width: 494px;
+margin: 0 auto;
+margin-bottom: 48px;
 }
 
 .btn {
@@ -191,7 +181,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border: none;
     font-family: inherit;  
     border-radius: 4px;
-    
 }
 .hero-btn {
     font-weight: 500;
@@ -201,14 +190,26 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     letter-spacing: 0.04em;
     color: var(--hero-btn-text-color);
     background-color: var(--accent-brand);
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     padding: 16px 32px;
-   
-   
 }
 
 /*----------advantages-------- */
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .advantages-content {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -219,8 +220,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: auto;
     gap: 20px;
 }
-
-
 
 .title-h3 {
     font-weight: 700;
@@ -289,6 +288,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 /* --------------footer-------------*/
 .footer {
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -307,13 +308,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
    margin-top: 16px;
 }
 
-.footer-logo-text {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: #E7E9FC;
-
-}
-
 /*---------Portfolio---------*/
 .filter {
     display: flex;
@@ -321,6 +315,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 24px;
+    margin-bottom: 72px;
 }
 
 /*-------filter buttons-----*/
@@ -346,8 +341,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .portfolio {
-padding-bottom: 120px;
 padding-top: 96px;
+padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -356,9 +351,9 @@ padding-top: 96px;
     justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
-    padding-top: 72px;
-
+    
 }
+
 .portfolio-list-item {
     display: block;
     background-color: var(--site-background-color);
