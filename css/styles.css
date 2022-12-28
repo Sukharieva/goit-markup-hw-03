@@ -3,6 +3,7 @@
     --text-color: #2E2F42;
     --secondary-text-color: #434455;
     --accent-brand: #4D5AE5;
+    --accent-active: #404BBF;
     --heder-logo: #000000;
     --site-background-color: #ffffff;
     --header-background-color: #ffffff;
@@ -80,6 +81,7 @@ display: block;
     display: flex;
     margin-right: auto;
     align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .heder-logo {
     font-family: "Raleway";
@@ -89,10 +91,9 @@ display: block;
     letter-spacing: 0.03em;
     color: var(--text-color);
     text-transform: uppercase;
-    display: flex;
-   
-
+    display: flex; 
 }
+
 .logo {
     font-family: "Raleway";
     font-weight: 800;
@@ -132,7 +133,7 @@ display: block;
 
 .link:hover, 
 .link:focus {
-    color: var(--accent-brand);
+    color: var(--accent-active);
 }
 
 .contacts {
@@ -193,9 +194,14 @@ display: block;
     display: flex;
     padding: 16px 32px;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+background: var(--accent-active);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 
 /*----------advantages-------- */
-
 
 .visually-hidden {
     position: absolute;
@@ -221,7 +227,7 @@ display: block;
 }
 
 .title-h3 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: var(--text-color);
@@ -229,7 +235,7 @@ display: block;
 }
 
 .title-h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     color: var(--text-color);
@@ -271,9 +277,12 @@ display: block;
 .team-list-item {
     display: block;
     background-color: var(--site-background-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
+
 .item-text {
    text-align: center;
     letter-spacing: 0.02em;
@@ -337,6 +346,8 @@ display: block;
 .filter-btn:focus {
     background-color: var(--accent-brand);
     color: var(--filter-btn-text-color);
+    border: 0;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
@@ -350,14 +361,23 @@ padding-bottom: 120px;
     justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
-    
 }
 
 .portfolio-list-item {
     display: block;
     background-color: var(--site-background-color);
-    border: 1px solid #E7E9FC;
     width: 360px;
+    border: 1px solid #E7E9FC;
+    border-radius: 0px 0px 4px 4px;
+    
+}
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+    border: 0.5px solid #F4F4FD;
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        
 }
 
 .portfolio-item-title {
